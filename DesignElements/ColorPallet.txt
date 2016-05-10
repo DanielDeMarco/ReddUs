@@ -1,0 +1,6 @@
+#84B3CC main blue
+#357799 Deee blue
+#BEFFF2 bright blue
+#FF614B Accent red
+#CC648A mute red
+

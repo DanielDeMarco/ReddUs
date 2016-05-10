@@ -1,0 +1,22 @@
+<template name = "groupPage">
+<div class = "dropzone">
+	{{> navBar}}
+	<div class="row">
+		<div class="col s6">
+			{{> postCard}}
+		</div>
+
+		<div>
+			{{> submitcomment}}
+		</div>
+
+		<div class="global-chat grey darken-2 z-depth-2 card ">
+			<ul class="collection chat-bubble">
+				<!-- Iter -->
+				{{> chat}}
+				<!-- /Iter -->
+			</ul>
+		</div>
+	</div>
+	</div>
+</template>

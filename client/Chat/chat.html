@@ -1,0 +1,24 @@
+<template name = "chat">
+	{{#each Comments}}
+	<div class = "animated fadeIn">
+	<li class = "collection-item avatar">
+		<img src="http://materializecss.com/images/yuna.jpg" class="circle">
+		<p class = "flow-text">{{ chatbubble}}</p>
+		<a id = "delcom" href="#">Delete</a>
+	</li>
+	</div>
+	{{/each}}
+</template>
+
+<template name = "submitcomment" >
+	<div class="chat-submit center">
+		<div class="input-field white-text grey darken-3">
+			<form>
+				<input placeholder="Comment..." id="addchat" type="text">
+				<button class="btn waves-effect waves-dark" type="submit" name="action" id="chatsend">
+					<i class="material-icons right">send</i><span>Send</span>
+				</button>
+			</form>
+		</div>
+	</div>
+</template>
