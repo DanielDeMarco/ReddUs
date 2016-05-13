@@ -1,10 +1,11 @@
 <template name = "chat">
-	{{#each Comments}}
+	{{#each CommentsforGroup}}
 	<div class = "animated fadeIn">
 	<li class = "collection-item avatar">
-		<img src="http://materializecss.com/images/yuna.jpg" class="circle">
+	<a class="right" id = "delcom" href="#">x</a>
+		<img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/13125035_10154091380141774_368332058683614384_n.jpg?oh=3f37142bec1116aae4c1d6fccc5fe8d0&oe=57A0CF4D" class="circle">
 		<p class = "flow-text">{{ chatbubble}}</p>
-		<a id = "delcom" href="#">Delete</a>
+		
 	</li>
 	</div>
 	{{/each}}
@@ -12,10 +13,11 @@
 
 <template name = "submitcomment" >
 	<div class="chat-submit center">
-		<div class="input-field white-text grey darken-3">
+		<div class="input-field white-text deep-blue chat-pad">
+
 			<form>
-				<input placeholder="Comment..." id="addchat" type="text">
-				<button class="btn waves-effect waves-dark" type="submit" name="action" id="chatsend">
+				<input placeholder="Chat..." id="addchat" type="text">
+				<button class="btn waves-effect waves-dark accent-red" type="submit" name="action" id="chatsend">
 					<i class="material-icons right">send</i><span>Send</span>
 				</button>
 			</form>

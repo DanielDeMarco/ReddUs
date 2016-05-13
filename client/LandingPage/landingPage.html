@@ -1,10 +1,40 @@
 <template name = "landingPage"  id = "landingBody">
-	<div class = "deep-blue card" id="login_box">
-		<form>
-			<h4>Username</h4>
-			<input class = "login-input" type="text" placeholder="Username" />
-			<h4>Password</h4>
-			<input class = "login-input" type="password" placeholder="Password" />
-		</form>
+
+	<div class="container">
+		<div class="row">
+			<!-- Row for logo -->
+			<div class="col s12 m8 offset-m2 ">
+				<div class="logo-container">
+
+					<img class ="responsive-img" id="redd" src="http://i1196.photobucket.com/albums/aa410/dan_demarco1/ReddusLeft_zps2bymbovu.png" alt="" />
+					<img class ="responsive-img" id="us" src="http://i1196.photobucket.com/albums/aa410/dan_demarco1/Us_zps51btjybo.png" alt="" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<!-- Row for login form -->
+			<div class = "col s12 m8 l6 offset-m2 offset-l3">
+				<div class = "deep-blue card" id="login_box">
+					<form>
+						<h4>Username</h4>
+						<input id="username" class = "login-input" type="text" placeholder="Username" />
+						<h4>Password</h4>
+						<input id="password" class = "login-input" type="password" placeholder="Password" />
+						<div class="row">
+						<div class="col s4 ">
+						<button id="register" class="btn accent-red text-center" type="button">Register</button>
+						</div>
+						<div class="col s4 offset-s4">
+						<button id="login" class="btn accent-red" type="submit">Login</button>
+						</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+
+		</div>
 	</div>
+
 </template>

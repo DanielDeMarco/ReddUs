@@ -11,7 +11,8 @@ Template.navBar.events({
 
 
 	$.getJSON(apiRequest, function(data) {
-	
+	var urldata = window.location.pathname.split('/');
+	var currentGroup = urldata[2];
 	var sub = data.data.children[0].data.subreddit;
 	var title = data.data.children[0].data.title;
 	var preview = data.data.children[0].data.preview.images[0].source.url;
@@ -23,11 +24,11 @@ Template.navBar.events({
 		preview: preview,
 		domain: domain,
 		subreddit: sub,
-		link: post
+		link: post,
+		group: currentGroup
 	};
 
 	Posts.insert(newPost);
-	
 	});  
 
 	}

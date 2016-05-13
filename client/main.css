@@ -1,6 +1,6 @@
 /*Main Color Palette*/
 .main-blue,body{
-	background-color: #84B3CC; 
+	background-color: #f1f1f1; 
 }
 
 .deep-blue {
@@ -14,7 +14,34 @@
 .accent-red {
  	background-color: #FF614B;	
 }
+.accent-red:hover{
+	background-color:#CC648A;
+}
+.accent-red:focus {
+	background-color: #FF614B;
+}
+
+.icon-red {
+	color:#FF614B;
+} 
 
 .mute-red {
 	background-color: #CC648A;
+}
+.test{
+	background-color: tomato;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }

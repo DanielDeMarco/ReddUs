@@ -1,6 +1,6 @@
 Template.postCard.helpers({
 	'Posts': function () {
-		return Posts.find({}, {sort: {dateCreated: -1}});
+		return Posts.find({group:this._id}, {sort: {dateCreated: -1}});
 	}
 });
 //Temp Delete For Testing
